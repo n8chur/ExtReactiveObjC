@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A0F5D311EF855D500FC51B0 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC1D3A1D9C67B200BE0B12 /* Expecta.framework */; };
+		3A0F5D321EF855D500FC51B0 /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC1D3C1D9C67B200BE0B12 /* Nocilla.framework */; };
+		3A0F5D331EF855D500FC51B0 /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE204751DDD30F200ADFB39 /* ReactiveObjC.framework */; };
+		3A0F5D341EF855D500FC51B0 /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC1D3E1D9C67B200BE0B12 /* Specta.framework */; };
+		3A627F431E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A627F411E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A627F441E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627F421E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.m */; };
+		3A627F461E8DB2B800E3D9E4 /* RACSignal+AUTCollectLatestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A627F451E8DB2B800E3D9E4 /* RACSignal+AUTCollectLatestSpec.m */; };
+		3A82C8291E2E7B110037480D /* RACCommand+AUTPassthroughCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A82C8271E2E7B110037480D /* RACCommand+AUTPassthroughCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A82C82A1E2E7B110037480D /* RACCommand+AUTPassthroughCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A82C8281E2E7B110037480D /* RACCommand+AUTPassthroughCommand.m */; };
+		3AA1CA191DFF248100BCD42E /* RACCommand+AUTIsEnabledOrExecutingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1CA181DFF248100BCD42E /* RACCommand+AUTIsEnabledOrExecutingSpec.m */; };
+		3AA1D3951E2D80BD0055D299 /* RACSignal+AUTIsNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA1D3931E2D80BD0055D299 /* RACSignal+AUTIsNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AA1D3961E2D80BD0055D299 /* RACSignal+AUTIsNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1D3941E2D80BD0055D299 /* RACSignal+AUTIsNil.m */; };
+		3AA1D3991E2D83120055D299 /* RACSignal+AUTIsNilSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1D3981E2D83120055D299 /* RACSignal+AUTIsNilSpec.m */; };
+		3AAC93261E9C25B90033B3E9 /* RACNTupleUnpackSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC93251E9C25B90033B3E9 /* RACNTupleUnpackSpec.m */; };
+		3AAC93271E9C270A0033B3E9 /* RACNTupleUnpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAC93211E9C1BFF0033B3E9 /* RACNTupleUnpack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AE084711DDD337800C5D932 /* AUTExtReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E5F8350F89B8FE0117299C /* AUTExtReactiveCocoa.framework */; };
+		3AE084721DDD339000C5D932 /* ReactiveObjC.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE204751DDD30F200ADFB39 /* ReactiveObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AE084741DDD35B100C5D932 /* AUTAutoType.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE084731DDD35B100C5D932 /* AUTAutoType.h */; };
+		3AE204761DDD30F200ADFB39 /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE204751DDD30F200ADFB39 /* ReactiveObjC.framework */; };
+		4642CAD21EF48984001709FC /* UINavigationController+RACAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4642CACE1EF48984001709FC /* UINavigationController+RACAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4642CAD31EF48984001709FC /* UINavigationController+RACAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4642CACF1EF48984001709FC /* UINavigationController+RACAdditions.m */; };
+		4642CAD41EF48984001709FC /* UIScrollView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4642CAD01EF48984001709FC /* UIScrollView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4642CAD51EF48984001709FC /* UIScrollView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4642CAD11EF48984001709FC /* UIScrollView+RACSignalSupport.m */; };
+		4642CAD81EF48A7A001709FC /* UIViewController+RACAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4642CAD61EF48A7A001709FC /* UIViewController+RACAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4642CAD91EF48A7A001709FC /* UIViewController+RACAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4642CAD71EF48A7A001709FC /* UIViewController+RACAdditions.m */; };
+		464808081DB19F040060B613 /* RACSignal+AUTTakeUntil.h in Headers */ = {isa = PBXBuildFile; fileRef = 464808061DB19F040060B613 /* RACSignal+AUTTakeUntil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		464808091DB19F040060B613 /* RACSignal+AUTTakeUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = 464808071DB19F040060B613 /* RACSignal+AUTTakeUntil.m */; };
+		4648080A1DB19F040060B613 /* RACSignal+AUTTakeUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = 464808071DB19F040060B613 /* RACSignal+AUTTakeUntil.m */; };
+		4648080C1DB1A0140060B613 /* RACSignal+AUTTakeUntilSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4648080B1DB1A0140060B613 /* RACSignal+AUTTakeUntilSpec.m */; };
+		46CC1CE51D9C47ED00BE0B12 /* AUTAssertNotNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CDF1D9C47ED00BE0B12 /* AUTAssertNotNil.h */; };
+		46CC1CE61D9C47ED00BE0B12 /* AUTExtObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CE01D9C47ED00BE0B12 /* AUTExtObjC.h */; };
+		46CC1CE71D9C47ED00BE0B12 /* AUTNotNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CE11D9C47ED00BE0B12 /* AUTNotNil.h */; };
+		46CC1CE81D9C47ED00BE0B12 /* AUTStrongifyOr.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CE21D9C47ED00BE0B12 /* AUTStrongifyOr.h */; };
+		46CC1CE91D9C47ED00BE0B12 /* AUTUnavailableDesignatedInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CE31D9C47ED00BE0B12 /* AUTUnavailableDesignatedInitializer.h */; };
+		46CC1CEA1D9C47ED00BE0B12 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CE41D9C47ED00BE0B12 /* metamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D071D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CEB1D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D081D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CEC1D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.m */; };
+		46CC1D091D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CED1D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D0A1D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CEE1D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.m */; };
+		46CC1D0B1D9C483700BE0B12 /* RACCommand+AUTDeferExecute.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CEF1D9C483700BE0B12 /* RACCommand+AUTDeferExecute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D0C1D9C483700BE0B12 /* RACCommand+AUTDeferExecute.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CF01D9C483700BE0B12 /* RACCommand+AUTDeferExecute.m */; };
+		46CC1D0D1D9C483700BE0B12 /* RACCommand+AUTDidExecute.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CF11D9C483700BE0B12 /* RACCommand+AUTDidExecute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D0E1D9C483700BE0B12 /* RACCommand+AUTDidExecute.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CF21D9C483700BE0B12 /* RACCommand+AUTDidExecute.m */; };
+		46CC1D0F1D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CF31D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D101D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CF41D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.m */; };
+		46CC1D111D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CF51D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D121D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CF61D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.m */; };
+		46CC1D131D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CF71D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D141D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CF81D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.m */; };
+		46CC1D151D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CF91D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D161D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CFA1D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.m */; };
+		46CC1D171D9C483700BE0B12 /* RACSignal+AUTCombineActive.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CFB1D9C483700BE0B12 /* RACSignal+AUTCombineActive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D181D9C483700BE0B12 /* RACSignal+AUTCombineActive.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CFC1D9C483700BE0B12 /* RACSignal+AUTCombineActive.m */; };
+		46CC1D191D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1CFD1D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D1A1D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CFE1D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.m */; };
+		46CC1D1D1D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1D011D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D1E1D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1D021D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.m */; };
+		46CC1D1F1D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1D031D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D201D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1D041D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.m */; };
+		46CC1D331D9C612300BE0B12 /* RACCommand+AUTAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1D311D9C612300BE0B12 /* RACCommand+AUTAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D341D9C612300BE0B12 /* RACCommand+AUTAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1D321D9C612300BE0B12 /* RACCommand+AUTAction.m */; };
+		46CC1D401D9C67B200BE0B12 /* AUTTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC1D381D9C67B200BE0B12 /* AUTTestKit.framework */; };
+		46CC1D491D9C67FC00BE0B12 /* AUTTestKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC1D381D9C67B200BE0B12 /* AUTTestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46CC1D4A1D9C67FC00BE0B12 /* Expecta.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC1D3A1D9C67B200BE0B12 /* Expecta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46CC1D4B1D9C67FC00BE0B12 /* Nocilla.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC1D3C1D9C67B200BE0B12 /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46CC1D4C1D9C67FC00BE0B12 /* Specta.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC1D3E1D9C67B200BE0B12 /* Specta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46CC1D551D9C687500BE0B12 /* RACSignal+AUTCombineActiveSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1D521D9C687500BE0B12 /* RACSignal+AUTCombineActiveSpec.m */; };
+		46CC1D561D9C687500BE0B12 /* RACSignal+AUTTypeAssertionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1D531D9C687500BE0B12 /* RACSignal+AUTTypeAssertionSpec.m */; };
+		46CC1D5F1D9C6B3300BE0B12 /* RACSignal+AUTCombineActive.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1CFC1D9C483700BE0B12 /* RACSignal+AUTCombineActive.m */; };
+		46CC1D601D9C6B3800BE0B12 /* RACSignal+AUTTypeAssertion.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1D041D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.m */; };
+		46CC1D651D9C811800BE0B12 /* RACSignal+AUTMainThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1D631D9C811800BE0B12 /* RACSignal+AUTMainThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D661D9C811800BE0B12 /* RACSignal+AUTMainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1D641D9C811800BE0B12 /* RACSignal+AUTMainThread.m */; };
+		46CC1D691D9C818A00BE0B12 /* RACDisposable+AUTMainThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC1D671D9C818A00BE0B12 /* RACDisposable+AUTMainThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC1D6A1D9C818A00BE0B12 /* RACDisposable+AUTMainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC1D681D9C818A00BE0B12 /* RACDisposable+AUTMainThread.m */; };
+		46F543401DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F5433E1DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46F543411DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F5433F1DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.m */; };
+		46F543451DA2CBF500D70ACF /* AUTEmptyReplaySubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F543431DA2CBF500D70ACF /* AUTEmptyReplaySubject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46F543461DA2CBF500D70ACF /* AUTEmptyReplaySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F543441DA2CBF500D70ACF /* AUTEmptyReplaySubject.m */; };
+		46F5434D1DA2DA3F00D70ACF /* RACSignal+AUTPolling.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F5434B1DA2DA3F00D70ACF /* RACSignal+AUTPolling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46F5434E1DA2DA3F00D70ACF /* RACSignal+AUTPolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F5434C1DA2DA3F00D70ACF /* RACSignal+AUTPolling.m */; };
+		46F543511DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F5434F1DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46F543521DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F543501DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.m */; };
+		46F543541DA2DCAD00D70ACF /* RACSignal+AUTSynchronizationAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F543531DA2DCAD00D70ACF /* RACSignal+AUTSynchronizationAdditionsSpec.m */; };
+		46F543551DA2DCF500D70ACF /* RACSignal+AUTSynchronizationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F543501DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.m */; };
+		4FC078730E68F4E5921C060C /* AUTExtReactiveCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = B263C2EE81C90597765F3151 /* AUTExtReactiveCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0313E11E35EDAB4B805ACF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 587EE7BCB05C43AE8BB2C768 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 471818CCBAE67B93288BD8EE;
+			remoteInfo = AUTExtReactiveCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46CC1D481D9C67DA00BE0B12 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				46CC1D491D9C67FC00BE0B12 /* AUTTestKit.framework in Copy Frameworks */,
+				46CC1D4A1D9C67FC00BE0B12 /* Expecta.framework in Copy Frameworks */,
+				46CC1D4B1D9C67FC00BE0B12 /* Nocilla.framework in Copy Frameworks */,
+				46CC1D4C1D9C67FC00BE0B12 /* Specta.framework in Copy Frameworks */,
+				3AE084721DDD339000C5D932 /* ReactiveObjC.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11423E896173C5DD56F2E04C /* AUTExtReactiveCocoa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = AUTExtReactiveCocoa.xcconfig; path = AUTExtReactiveCocoa/AUTExtReactiveCocoa.xcconfig; sourceTree = "<group>"; };
+		21CD277E695D6AC9D14D2D7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E058A46EC4B60494CA17FE /* AUTExtReactiveCocoaTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = AUTExtReactiveCocoaTests.xcconfig; path = AUTExtReactiveCocoaTests/AUTExtReactiveCocoaTests.xcconfig; sourceTree = "<group>"; };
+		320116733B82F679B7572148 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "iOS-Application.xcconfig"; path = "Carthage/Checkouts/xcconfigs/iOS/iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		33BB58D4C574E5C26A75C95E /* Profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Profile.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Configurations/Profile.xcconfig; sourceTree = "<group>"; };
+		371C9CEEB9A7B46C584EA71C /* Common.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Common.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Common.xcconfig; sourceTree = "<group>"; };
+		3A0F5D2D1EF8557000FC51B0 /* AUTExtReactiveCocoaTestsStatic.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = AUTExtReactiveCocoaTestsStatic.xcconfig; path = AUTExtReactiveCocoaTests/AUTExtReactiveCocoaTestsStatic.xcconfig; sourceTree = "<group>"; };
+		3A4466A71EF499490004C01C /* AUTExtReactiveCocoaStatic.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; lineEnding = 0; name = AUTExtReactiveCocoaStatic.xcconfig; path = AUTExtReactiveCocoa/AUTExtReactiveCocoaStatic.xcconfig; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
+		3A627F411E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTCollectLatest.h"; sourceTree = "<group>"; };
+		3A627F421E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTCollectLatest.m"; sourceTree = "<group>"; };
+		3A627F451E8DB2B800E3D9E4 /* RACSignal+AUTCollectLatestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTCollectLatestSpec.m"; sourceTree = "<group>"; };
+		3A82C8271E2E7B110037480D /* RACCommand+AUTPassthroughCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+AUTPassthroughCommand.h"; sourceTree = "<group>"; };
+		3A82C8281E2E7B110037480D /* RACCommand+AUTPassthroughCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+AUTPassthroughCommand.m"; sourceTree = "<group>"; };
+		3AA1CA181DFF248100BCD42E /* RACCommand+AUTIsEnabledOrExecutingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+AUTIsEnabledOrExecutingSpec.m"; sourceTree = "<group>"; };
+		3AA1D3931E2D80BD0055D299 /* RACSignal+AUTIsNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTIsNil.h"; sourceTree = "<group>"; };
+		3AA1D3941E2D80BD0055D299 /* RACSignal+AUTIsNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTIsNil.m"; sourceTree = "<group>"; };
+		3AA1D3981E2D83120055D299 /* RACSignal+AUTIsNilSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTIsNilSpec.m"; sourceTree = "<group>"; };
+		3AAC93211E9C1BFF0033B3E9 /* RACNTupleUnpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACNTupleUnpack.h; sourceTree = "<group>"; };
+		3AAC93251E9C25B90033B3E9 /* RACNTupleUnpackSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACNTupleUnpackSpec.m; sourceTree = "<group>"; };
+		3AE084731DDD35B100C5D932 /* AUTAutoType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTAutoType.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTAutoType.h; sourceTree = "<group>"; };
+		3AE204751DDD30F200ADFB39 /* ReactiveObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveObjC.framework; path = Carthage/Build/iOS/ReactiveObjC.framework; sourceTree = "<group>"; };
+		4642CACE1EF48984001709FC /* UINavigationController+RACAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RACAdditions.h"; sourceTree = "<group>"; };
+		4642CACF1EF48984001709FC /* UINavigationController+RACAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RACAdditions.m"; sourceTree = "<group>"; };
+		4642CAD01EF48984001709FC /* UIScrollView+RACSignalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RACSignalSupport.h"; sourceTree = "<group>"; };
+		4642CAD11EF48984001709FC /* UIScrollView+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RACSignalSupport.m"; sourceTree = "<group>"; };
+		4642CAD61EF48A7A001709FC /* UIViewController+RACAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RACAdditions.h"; sourceTree = "<group>"; };
+		4642CAD71EF48A7A001709FC /* UIViewController+RACAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RACAdditions.m"; sourceTree = "<group>"; };
+		464808061DB19F040060B613 /* RACSignal+AUTTakeUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTTakeUntil.h"; sourceTree = "<group>"; };
+		464808071DB19F040060B613 /* RACSignal+AUTTakeUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTTakeUntil.m"; sourceTree = "<group>"; };
+		4648080B1DB1A0140060B613 /* RACSignal+AUTTakeUntilSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTTakeUntilSpec.m"; sourceTree = "<group>"; };
+		46CC1CDF1D9C47ED00BE0B12 /* AUTAssertNotNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTAssertNotNil.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTAssertNotNil.h; sourceTree = "<group>"; };
+		46CC1CE01D9C47ED00BE0B12 /* AUTExtObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTExtObjC.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTExtObjC.h; sourceTree = "<group>"; };
+		46CC1CE11D9C47ED00BE0B12 /* AUTNotNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTNotNil.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTNotNil.h; sourceTree = "<group>"; };
+		46CC1CE21D9C47ED00BE0B12 /* AUTStrongifyOr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTStrongifyOr.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTStrongifyOr.h; sourceTree = "<group>"; };
+		46CC1CE31D9C47ED00BE0B12 /* AUTUnavailableDesignatedInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTUnavailableDesignatedInitializer.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTUnavailableDesignatedInitializer.h; sourceTree = "<group>"; };
+		46CC1CE41D9C47ED00BE0B12 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/metamacros.h; sourceTree = "<group>"; };
+		46CC1CEB1D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACChannelTerminal+AUTChannelTo.h"; sourceTree = "<group>"; };
+		46CC1CEC1D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACChannelTerminal+AUTChannelTo.m"; sourceTree = "<group>"; };
+		46CC1CED1D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+AUTCommandWithExecutionValues.h"; sourceTree = "<group>"; };
+		46CC1CEE1D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+AUTCommandWithExecutionValues.m"; sourceTree = "<group>"; };
+		46CC1CEF1D9C483700BE0B12 /* RACCommand+AUTDeferExecute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+AUTDeferExecute.h"; sourceTree = "<group>"; };
+		46CC1CF01D9C483700BE0B12 /* RACCommand+AUTDeferExecute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+AUTDeferExecute.m"; sourceTree = "<group>"; };
+		46CC1CF11D9C483700BE0B12 /* RACCommand+AUTDidExecute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+AUTDidExecute.h"; sourceTree = "<group>"; };
+		46CC1CF21D9C483700BE0B12 /* RACCommand+AUTDidExecute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+AUTDidExecute.m"; sourceTree = "<group>"; };
+		46CC1CF31D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+AUTImmediateExecutions.h"; sourceTree = "<group>"; };
+		46CC1CF41D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+AUTImmediateExecutions.m"; sourceTree = "<group>"; };
+		46CC1CF51D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+AUTIsEnabledOrExecuting.h"; sourceTree = "<group>"; };
+		46CC1CF61D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+AUTIsEnabledOrExecuting.m"; sourceTree = "<group>"; };
+		46CC1CF71D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+AUTOneShotCommand.h"; sourceTree = "<group>"; };
+		46CC1CF81D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+AUTOneShotCommand.m"; sourceTree = "<group>"; };
+		46CC1CF91D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSerialDisposable+AUTDisposable.h"; sourceTree = "<group>"; };
+		46CC1CFA1D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSerialDisposable+AUTDisposable.m"; sourceTree = "<group>"; };
+		46CC1CFB1D9C483700BE0B12 /* RACSignal+AUTCombineActive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTCombineActive.h"; sourceTree = "<group>"; };
+		46CC1CFC1D9C483700BE0B12 /* RACSignal+AUTCombineActive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTCombineActive.m"; sourceTree = "<group>"; };
+		46CC1CFD1D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTDelayUntilAfterNextExecutionOf.h"; sourceTree = "<group>"; };
+		46CC1CFE1D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTDelayUntilAfterNextExecutionOf.m"; sourceTree = "<group>"; };
+		46CC1D011D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTRetainUntilDisposal.h"; sourceTree = "<group>"; };
+		46CC1D021D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTRetainUntilDisposal.m"; sourceTree = "<group>"; };
+		46CC1D031D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTTypeAssertion.h"; sourceTree = "<group>"; };
+		46CC1D041D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTTypeAssertion.m"; sourceTree = "<group>"; };
+		46CC1D311D9C612300BE0B12 /* RACCommand+AUTAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACCommand+AUTAction.h"; sourceTree = "<group>"; };
+		46CC1D321D9C612300BE0B12 /* RACCommand+AUTAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACCommand+AUTAction.m"; sourceTree = "<group>"; };
+		46CC1D381D9C67B200BE0B12 /* AUTTestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTTestKit.framework; path = Carthage/Build/iOS/AUTTestKit.framework; sourceTree = "<group>"; };
+		46CC1D3A1D9C67B200BE0B12 /* Expecta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Expecta.framework; path = Carthage/Build/iOS/Expecta.framework; sourceTree = "<group>"; };
+		46CC1D3C1D9C67B200BE0B12 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
+		46CC1D3E1D9C67B200BE0B12 /* Specta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Specta.framework; path = Carthage/Build/iOS/Specta.framework; sourceTree = "<group>"; };
+		46CC1D521D9C687500BE0B12 /* RACSignal+AUTCombineActiveSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTCombineActiveSpec.m"; sourceTree = "<group>"; };
+		46CC1D531D9C687500BE0B12 /* RACSignal+AUTTypeAssertionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTTypeAssertionSpec.m"; sourceTree = "<group>"; };
+		46CC1D631D9C811800BE0B12 /* RACSignal+AUTMainThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTMainThread.h"; sourceTree = "<group>"; };
+		46CC1D641D9C811800BE0B12 /* RACSignal+AUTMainThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTMainThread.m"; sourceTree = "<group>"; };
+		46CC1D671D9C818A00BE0B12 /* RACDisposable+AUTMainThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACDisposable+AUTMainThread.h"; sourceTree = "<group>"; };
+		46CC1D681D9C818A00BE0B12 /* RACDisposable+AUTMainThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACDisposable+AUTMainThread.m"; sourceTree = "<group>"; };
+		46F5433E1DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTShareWhileActive.h"; sourceTree = "<group>"; };
+		46F5433F1DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTShareWhileActive.m"; sourceTree = "<group>"; };
+		46F543431DA2CBF500D70ACF /* AUTEmptyReplaySubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTEmptyReplaySubject.h; sourceTree = "<group>"; };
+		46F543441DA2CBF500D70ACF /* AUTEmptyReplaySubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTEmptyReplaySubject.m; sourceTree = "<group>"; };
+		46F5434B1DA2DA3F00D70ACF /* RACSignal+AUTPolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTPolling.h"; sourceTree = "<group>"; };
+		46F5434C1DA2DA3F00D70ACF /* RACSignal+AUTPolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTPolling.m"; sourceTree = "<group>"; };
+		46F5434F1DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+AUTSynchronizationAdditions.h"; sourceTree = "<group>"; };
+		46F543501DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTSynchronizationAdditions.m"; sourceTree = "<group>"; };
+		46F543531DA2DCAD00D70ACF /* RACSignal+AUTSynchronizationAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+AUTSynchronizationAdditionsSpec.m"; sourceTree = "<group>"; };
+		4BC25CE084AB4DF59500551E /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "iOS-StaticLibrary.xcconfig"; path = "Carthage/Checkouts/xcconfigs/iOS/iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		4ED85584902B48196F4C75D5 /* AUTExtReactiveCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUTExtReactiveCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA3DC8B2533F6DDD8E26617 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "iOS-Framework.xcconfig"; path = "Carthage/Checkouts/xcconfigs/iOS/iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		82B0200959F221FF1347221C /* Application.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Application.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Targets/Application.xcconfig; sourceTree = "<group>"; };
+		89E5F8350F89B8FE0117299C /* AUTExtReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AUTExtReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A37E6ECBC44D1CBC83E3A06D /* Framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Framework.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Targets/Framework.xcconfig; sourceTree = "<group>"; };
+		B089DFDEF90527CE2664E9E2 /* Release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Configurations/Release.xcconfig; sourceTree = "<group>"; };
+		B263C2EE81C90597765F3151 /* AUTExtReactiveCocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AUTExtReactiveCocoa.h; sourceTree = "<group>"; };
+		CEF7DA49736D4DE566050B69 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = StaticLibrary.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Targets/StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		E40AC4248EF1A666FDC1410F /* iOS-Base.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "iOS-Base.xcconfig"; path = "Carthage/Checkouts/xcconfigs/iOS/iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		F41CD3F9DB5155213DA02EBE /* Debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Configurations/Debug.xcconfig; sourceTree = "<group>"; };
+		F566EB2B80E834C7AAABFD65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8339377E7FEA75B67EC3234 /* Test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Test.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Configurations/Test.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C19A421EF3595CECB5CBB88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE204761DDD30F200ADFB39 /* ReactiveObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F9026EA12FF1CF8AFEEE6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE084711DDD337800C5D932 /* AUTExtReactiveCocoa.framework in Frameworks */,
+				46CC1D401D9C67B200BE0B12 /* AUTTestKit.framework in Frameworks */,
+				3A0F5D311EF855D500FC51B0 /* Expecta.framework in Frameworks */,
+				3A0F5D321EF855D500FC51B0 /* Nocilla.framework in Frameworks */,
+				3A0F5D331EF855D500FC51B0 /* ReactiveObjC.framework in Frameworks */,
+				3A0F5D341EF855D500FC51B0 /* Specta.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09DF17216FA0ACF6C192609B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21CD277E695D6AC9D14D2D7B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CCE21B178B17497575D757E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				320116733B82F679B7572148 /* iOS-Application.xcconfig */,
+				E40AC4248EF1A666FDC1410F /* iOS-Base.xcconfig */,
+				6EA3DC8B2533F6DDD8E26617 /* iOS-Framework.xcconfig */,
+				4BC25CE084AB4DF59500551E /* iOS-StaticLibrary.xcconfig */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3A0F5D351EF855E400FC51B0 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				46CC1CDE1D9C47D400BE0B12 /* AUTExtObjC */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		3AA1D38F1E2D80200055D299 /* RACCommand */ = {
+			isa = PBXGroup;
+			children = (
+				46CC1D311D9C612300BE0B12 /* RACCommand+AUTAction.h */,
+				46CC1D321D9C612300BE0B12 /* RACCommand+AUTAction.m */,
+				46CC1CED1D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.h */,
+				46CC1CEE1D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.m */,
+				46CC1CEF1D9C483700BE0B12 /* RACCommand+AUTDeferExecute.h */,
+				46CC1CF01D9C483700BE0B12 /* RACCommand+AUTDeferExecute.m */,
+				46CC1CF11D9C483700BE0B12 /* RACCommand+AUTDidExecute.h */,
+				46CC1CF21D9C483700BE0B12 /* RACCommand+AUTDidExecute.m */,
+				46CC1CF31D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.h */,
+				46CC1CF41D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.m */,
+				46CC1CF51D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.h */,
+				46CC1CF61D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.m */,
+				46CC1CF71D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.h */,
+				46CC1CF81D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.m */,
+				3A82C8271E2E7B110037480D /* RACCommand+AUTPassthroughCommand.h */,
+				3A82C8281E2E7B110037480D /* RACCommand+AUTPassthroughCommand.m */,
+			);
+			name = RACCommand;
+			sourceTree = "<group>";
+		};
+		3AA1D3901E2D802B0055D299 /* RACChannelTerminal */ = {
+			isa = PBXGroup;
+			children = (
+				46CC1CEB1D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.h */,
+				46CC1CEC1D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.m */,
+			);
+			name = RACChannelTerminal;
+			sourceTree = "<group>";
+		};
+		3AA1D3911E2D80320055D299 /* RACDisposable */ = {
+			isa = PBXGroup;
+			children = (
+				46CC1D671D9C818A00BE0B12 /* RACDisposable+AUTMainThread.h */,
+				46CC1D681D9C818A00BE0B12 /* RACDisposable+AUTMainThread.m */,
+				46CC1CF91D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.h */,
+				46CC1CFA1D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.m */,
+			);
+			name = RACDisposable;
+			sourceTree = "<group>";
+		};
+		3AA1D3921E2D80390055D299 /* RACSignal */ = {
+			isa = PBXGroup;
+			children = (
+				3A627F411E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.h */,
+				3A627F421E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.m */,
+				46CC1CFB1D9C483700BE0B12 /* RACSignal+AUTCombineActive.h */,
+				46CC1CFC1D9C483700BE0B12 /* RACSignal+AUTCombineActive.m */,
+				46CC1CFD1D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.h */,
+				46CC1CFE1D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.m */,
+				3AA1D3931E2D80BD0055D299 /* RACSignal+AUTIsNil.h */,
+				3AA1D3941E2D80BD0055D299 /* RACSignal+AUTIsNil.m */,
+				46CC1D631D9C811800BE0B12 /* RACSignal+AUTMainThread.h */,
+				46CC1D641D9C811800BE0B12 /* RACSignal+AUTMainThread.m */,
+				46F5434B1DA2DA3F00D70ACF /* RACSignal+AUTPolling.h */,
+				46F5434C1DA2DA3F00D70ACF /* RACSignal+AUTPolling.m */,
+				46CC1D011D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.h */,
+				46CC1D021D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.m */,
+				46F5433E1DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.h */,
+				46F5433F1DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.m */,
+				46F5434F1DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.h */,
+				46F543501DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.m */,
+				464808061DB19F040060B613 /* RACSignal+AUTTakeUntil.h */,
+				464808071DB19F040060B613 /* RACSignal+AUTTakeUntil.m */,
+				46CC1D031D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.h */,
+				46CC1D041D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.m */,
+			);
+			name = RACSignal;
+			sourceTree = "<group>";
+		};
+		3AAC93281E9C3B980033B3E9 /* RACTuple */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC93211E9C1BFF0033B3E9 /* RACNTupleUnpack.h */,
+			);
+			name = RACTuple;
+			sourceTree = "<group>";
+		};
+		44D1971F81F34264E9599C18 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				F41CD3F9DB5155213DA02EBE /* Debug.xcconfig */,
+				33BB58D4C574E5C26A75C95E /* Profile.xcconfig */,
+				B089DFDEF90527CE2664E9E2 /* Release.xcconfig */,
+				F8339377E7FEA75B67EC3234 /* Test.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		4642CACD1EF4896F001709FC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4642CACE1EF48984001709FC /* UINavigationController+RACAdditions.h */,
+				4642CACF1EF48984001709FC /* UINavigationController+RACAdditions.m */,
+				4642CAD01EF48984001709FC /* UIScrollView+RACSignalSupport.h */,
+				4642CAD11EF48984001709FC /* UIScrollView+RACSignalSupport.m */,
+				4642CAD61EF48A7A001709FC /* UIViewController+RACAdditions.h */,
+				4642CAD71EF48A7A001709FC /* UIViewController+RACAdditions.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		46CC1CDD1D9C467B00BE0B12 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AA1D3901E2D802B0055D299 /* RACChannelTerminal */,
+				3AA1D38F1E2D80200055D299 /* RACCommand */,
+				3AA1D3911E2D80320055D299 /* RACDisposable */,
+				3AA1D3921E2D80390055D299 /* RACSignal */,
+				3AAC93281E9C3B980033B3E9 /* RACTuple */,
+				4642CACD1EF4896F001709FC /* UIKit */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		46CC1CDE1D9C47D400BE0B12 /* AUTExtObjC */ = {
+			isa = PBXGroup;
+			children = (
+				46CC1CDF1D9C47ED00BE0B12 /* AUTAssertNotNil.h */,
+				3AE084731DDD35B100C5D932 /* AUTAutoType.h */,
+				46CC1CE01D9C47ED00BE0B12 /* AUTExtObjC.h */,
+				46CC1CE11D9C47ED00BE0B12 /* AUTNotNil.h */,
+				46CC1CE21D9C47ED00BE0B12 /* AUTStrongifyOr.h */,
+				46CC1CE31D9C47ED00BE0B12 /* AUTUnavailableDesignatedInitializer.h */,
+				46CC1CE41D9C47ED00BE0B12 /* metamacros.h */,
+			);
+			name = AUTExtObjC;
+			sourceTree = "<group>";
+		};
+		46CC1D511D9C686500BE0B12 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				46F543531DA2DCAD00D70ACF /* RACSignal+AUTSynchronizationAdditionsSpec.m */,
+				46CC1D521D9C687500BE0B12 /* RACSignal+AUTCombineActiveSpec.m */,
+				4648080B1DB1A0140060B613 /* RACSignal+AUTTakeUntilSpec.m */,
+				46CC1D531D9C687500BE0B12 /* RACSignal+AUTTypeAssertionSpec.m */,
+				3AA1CA181DFF248100BCD42E /* RACCommand+AUTIsEnabledOrExecutingSpec.m */,
+				3AA1D3981E2D83120055D299 /* RACSignal+AUTIsNilSpec.m */,
+				3A627F451E8DB2B800E3D9E4 /* RACSignal+AUTCollectLatestSpec.m */,
+				3AAC93251E9C25B90033B3E9 /* RACNTupleUnpackSpec.m */,
+			);
+			name = Specs;
+			sourceTree = "<group>";
+		};
+		46F543421DA2CBEC00D70ACF /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				46F543431DA2CBF500D70ACF /* AUTEmptyReplaySubject.h */,
+				46F543441DA2CBF500D70ACF /* AUTEmptyReplaySubject.m */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		4AC93B8CE99C56AFCD2E9A49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46CC1D381D9C67B200BE0B12 /* AUTTestKit.framework */,
+				46CC1D3A1D9C67B200BE0B12 /* Expecta.framework */,
+				46CC1D3C1D9C67B200BE0B12 /* Nocilla.framework */,
+				3AE204751DDD30F200ADFB39 /* ReactiveObjC.framework */,
+				46CC1D3E1D9C67B200BE0B12 /* Specta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F08E8820DCFF77F52FDFD84 = {
+			isa = PBXGroup;
+			children = (
+				8A20CBA1F336612217D9A091 /* AUTExtReactiveCocoa */,
+				9B3752FB7D6E2C612ADE1290 /* AUTExtReactiveCocoaTests */,
+				7E382DBF2170F89A0E71DACF /* Configuration */,
+				4AC93B8CE99C56AFCD2E9A49 /* Frameworks */,
+				AB7B1D5808E14E1A9B0428ED /* Products */,
+				3A0F5D351EF855E400FC51B0 /* Vendor */,
+			);
+			sourceTree = "<group>";
+		};
+		7E382DBF2170F89A0E71DACF /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				11423E896173C5DD56F2E04C /* AUTExtReactiveCocoa.xcconfig */,
+				3A4466A71EF499490004C01C /* AUTExtReactiveCocoaStatic.xcconfig */,
+				30E058A46EC4B60494CA17FE /* AUTExtReactiveCocoaTests.xcconfig */,
+				3A0F5D2D1EF8557000FC51B0 /* AUTExtReactiveCocoaTestsStatic.xcconfig */,
+				BAB47C0EA806E3E7860E0E02 /* Base */,
+				1CCE21B178B17497575D757E /* iOS */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		8A20CBA1F336612217D9A091 /* AUTExtReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				B263C2EE81C90597765F3151 /* AUTExtReactiveCocoa.h */,
+				46F543421DA2CBEC00D70ACF /* Subclasses */,
+				46CC1CDD1D9C467B00BE0B12 /* Extensions */,
+				09DF17216FA0ACF6C192609B /* Supporting Files */,
+			);
+			path = AUTExtReactiveCocoa;
+			sourceTree = "<group>";
+		};
+		9B3752FB7D6E2C612ADE1290 /* AUTExtReactiveCocoaTests */ = {
+			isa = PBXGroup;
+			children = (
+				46CC1D511D9C686500BE0B12 /* Specs */,
+				ED7B5B7942835B679A767CB1 /* Supporting Files */,
+			);
+			path = AUTExtReactiveCocoaTests;
+			sourceTree = "<group>";
+		};
+		A75988216174DCB97E5377CF /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				82B0200959F221FF1347221C /* Application.xcconfig */,
+				A37E6ECBC44D1CBC83E3A06D /* Framework.xcconfig */,
+				CEF7DA49736D4DE566050B69 /* StaticLibrary.xcconfig */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		AB7B1D5808E14E1A9B0428ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89E5F8350F89B8FE0117299C /* AUTExtReactiveCocoa.framework */,
+				4ED85584902B48196F4C75D5 /* AUTExtReactiveCocoaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAB47C0EA806E3E7860E0E02 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				44D1971F81F34264E9599C18 /* Configurations */,
+				A75988216174DCB97E5377CF /* Targets */,
+				371C9CEEB9A7B46C584EA71C /* Common.xcconfig */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		ED7B5B7942835B679A767CB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F566EB2B80E834C7AAABFD65 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		851DD22368871F3ED078A26B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA1D3951E2D80BD0055D299 /* RACSignal+AUTIsNil.h in Headers */,
+				46CC1D331D9C612300BE0B12 /* RACCommand+AUTAction.h in Headers */,
+				46CC1CE81D9C47ED00BE0B12 /* AUTStrongifyOr.h in Headers */,
+				3A82C8291E2E7B110037480D /* RACCommand+AUTPassthroughCommand.h in Headers */,
+				3A627F431E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.h in Headers */,
+				464808081DB19F040060B613 /* RACSignal+AUTTakeUntil.h in Headers */,
+				46CC1D1F1D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.h in Headers */,
+				46F543451DA2CBF500D70ACF /* AUTEmptyReplaySubject.h in Headers */,
+				46CC1D071D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.h in Headers */,
+				46CC1D0D1D9C483700BE0B12 /* RACCommand+AUTDidExecute.h in Headers */,
+				46CC1CE91D9C47ED00BE0B12 /* AUTUnavailableDesignatedInitializer.h in Headers */,
+				46CC1D191D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.h in Headers */,
+				46CC1D651D9C811800BE0B12 /* RACSignal+AUTMainThread.h in Headers */,
+				46F543511DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.h in Headers */,
+				46CC1D171D9C483700BE0B12 /* RACSignal+AUTCombineActive.h in Headers */,
+				4642CAD41EF48984001709FC /* UIScrollView+RACSignalSupport.h in Headers */,
+				3AE084741DDD35B100C5D932 /* AUTAutoType.h in Headers */,
+				46CC1D0B1D9C483700BE0B12 /* RACCommand+AUTDeferExecute.h in Headers */,
+				46CC1D1D1D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.h in Headers */,
+				46CC1CEA1D9C47ED00BE0B12 /* metamacros.h in Headers */,
+				4642CAD81EF48A7A001709FC /* UIViewController+RACAdditions.h in Headers */,
+				46CC1D111D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.h in Headers */,
+				46CC1D091D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.h in Headers */,
+				4642CAD21EF48984001709FC /* UINavigationController+RACAdditions.h in Headers */,
+				4FC078730E68F4E5921C060C /* AUTExtReactiveCocoa.h in Headers */,
+				46CC1CE51D9C47ED00BE0B12 /* AUTAssertNotNil.h in Headers */,
+				3AAC93271E9C270A0033B3E9 /* RACNTupleUnpack.h in Headers */,
+				46F5434D1DA2DA3F00D70ACF /* RACSignal+AUTPolling.h in Headers */,
+				46CC1D0F1D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.h in Headers */,
+				46CC1D691D9C818A00BE0B12 /* RACDisposable+AUTMainThread.h in Headers */,
+				46F543401DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.h in Headers */,
+				46CC1D131D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.h in Headers */,
+				46CC1CE61D9C47ED00BE0B12 /* AUTExtObjC.h in Headers */,
+				46CC1CE71D9C47ED00BE0B12 /* AUTNotNil.h in Headers */,
+				46CC1D151D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		471818CCBAE67B93288BD8EE /* AUTExtReactiveCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C0A47F0107BC4D9AA08B369 /* Build configuration list for PBXNativeTarget "AUTExtReactiveCocoa" */;
+			buildPhases = (
+				568E9F03897FEA5EA265B3E3 /* Sources */,
+				7C19A421EF3595CECB5CBB88 /* Frameworks */,
+				851DD22368871F3ED078A26B /* Headers */,
+				46CC1D501D9C684E00BE0B12 /* Resources */,
+				46CC1D4E1D9C682A00BE0B12 /* Copy Products to Carthage/Build/iOS */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AUTExtReactiveCocoa;
+			productName = AUTExtReactiveCocoa;
+			productReference = 89E5F8350F89B8FE0117299C /* AUTExtReactiveCocoa.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA058AE07B76EF9F8CE3E9F9 /* AUTExtReactiveCocoaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B8C8849A072093C1864EAC0 /* Build configuration list for PBXNativeTarget "AUTExtReactiveCocoaTests" */;
+			buildPhases = (
+				998B545DED71A6663D81800B /* Sources */,
+				E0F9026EA12FF1CF8AFEEE6A /* Frameworks */,
+				8A96D1A985E788EEE79F4092 /* Resources */,
+				46CC1D481D9C67DA00BE0B12 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10CC73E24FE139C3B55A52DA /* PBXTargetDependency */,
+			);
+			name = AUTExtReactiveCocoaTests;
+			productName = AUTExtReactiveCocoaTests;
+			productReference = 4ED85584902B48196F4C75D5 /* AUTExtReactiveCocoaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		587EE7BCB05C43AE8BB2C768 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AUT;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Automatic;
+			};
+			buildConfigurationList = 9E5E9724539DF3D3295FE880 /* Build configuration list for PBXProject "AUTExtReactiveCocoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4F08E8820DCFF77F52FDFD84;
+			productRefGroup = AB7B1D5808E14E1A9B0428ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				471818CCBAE67B93288BD8EE /* AUTExtReactiveCocoa */,
+				AA058AE07B76EF9F8CE3E9F9 /* AUTExtReactiveCocoaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46CC1D501D9C684E00BE0B12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A96D1A985E788EEE79F4092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46CC1D4E1D9C682A00BE0B12 /* Copy Products to Carthage/Build/iOS */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Products to Carthage/Build/iOS";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "build_dir=\"$SRCROOT/Carthage/Build\"\n\n# Only copy when the Carthage/Build directory is a symlink\nif ! [ -L \"$build_dir\" ]; then exit 0; fi\n\nrsync --delete -av \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME\"* \"$build_dir/iOS\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		568E9F03897FEA5EA265B3E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CC1D1E1D9C483700BE0B12 /* RACSignal+AUTRetainUntilDisposal.m in Sources */,
+				46CC1D341D9C612300BE0B12 /* RACCommand+AUTAction.m in Sources */,
+				46CC1D181D9C483700BE0B12 /* RACSignal+AUTCombineActive.m in Sources */,
+				4642CAD51EF48984001709FC /* UIScrollView+RACSignalSupport.m in Sources */,
+				3AA1D3961E2D80BD0055D299 /* RACSignal+AUTIsNil.m in Sources */,
+				46CC1D141D9C483700BE0B12 /* RACCommand+AUTOneShotCommand.m in Sources */,
+				46CC1D0A1D9C483700BE0B12 /* RACCommand+AUTCommandWithExecutionValues.m in Sources */,
+				46CC1D201D9C483700BE0B12 /* RACSignal+AUTTypeAssertion.m in Sources */,
+				46CC1D121D9C483700BE0B12 /* RACCommand+AUTIsEnabledOrExecuting.m in Sources */,
+				3A627F441E8DB1D000E3D9E4 /* RACSignal+AUTCollectLatest.m in Sources */,
+				46CC1D6A1D9C818A00BE0B12 /* RACDisposable+AUTMainThread.m in Sources */,
+				46CC1D081D9C483700BE0B12 /* RACChannelTerminal+AUTChannelTo.m in Sources */,
+				4642CAD91EF48A7A001709FC /* UIViewController+RACAdditions.m in Sources */,
+				464808091DB19F040060B613 /* RACSignal+AUTTakeUntil.m in Sources */,
+				46F5434E1DA2DA3F00D70ACF /* RACSignal+AUTPolling.m in Sources */,
+				46CC1D661D9C811800BE0B12 /* RACSignal+AUTMainThread.m in Sources */,
+				46CC1D0C1D9C483700BE0B12 /* RACCommand+AUTDeferExecute.m in Sources */,
+				46F543411DA2CBD400D70ACF /* RACSignal+AUTShareWhileActive.m in Sources */,
+				46CC1D1A1D9C483700BE0B12 /* RACSignal+AUTDelayUntilAfterNextExecutionOf.m in Sources */,
+				46F543461DA2CBF500D70ACF /* AUTEmptyReplaySubject.m in Sources */,
+				4642CAD31EF48984001709FC /* UINavigationController+RACAdditions.m in Sources */,
+				46F543521DA2DC9800D70ACF /* RACSignal+AUTSynchronizationAdditions.m in Sources */,
+				3A82C82A1E2E7B110037480D /* RACCommand+AUTPassthroughCommand.m in Sources */,
+				46CC1D161D9C483700BE0B12 /* RACSerialDisposable+AUTDisposable.m in Sources */,
+				46CC1D101D9C483700BE0B12 /* RACCommand+AUTImmediateExecutions.m in Sources */,
+				46CC1D0E1D9C483700BE0B12 /* RACCommand+AUTDidExecute.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		998B545DED71A6663D81800B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CC1D5F1D9C6B3300BE0B12 /* RACSignal+AUTCombineActive.m in Sources */,
+				46CC1D561D9C687500BE0B12 /* RACSignal+AUTTypeAssertionSpec.m in Sources */,
+				3AA1D3991E2D83120055D299 /* RACSignal+AUTIsNilSpec.m in Sources */,
+				3AAC93261E9C25B90033B3E9 /* RACNTupleUnpackSpec.m in Sources */,
+				46CC1D601D9C6B3800BE0B12 /* RACSignal+AUTTypeAssertion.m in Sources */,
+				4648080A1DB19F040060B613 /* RACSignal+AUTTakeUntil.m in Sources */,
+				3A627F461E8DB2B800E3D9E4 /* RACSignal+AUTCollectLatestSpec.m in Sources */,
+				4648080C1DB1A0140060B613 /* RACSignal+AUTTakeUntilSpec.m in Sources */,
+				46CC1D551D9C687500BE0B12 /* RACSignal+AUTCombineActiveSpec.m in Sources */,
+				3AA1CA191DFF248100BCD42E /* RACCommand+AUTIsEnabledOrExecutingSpec.m in Sources */,
+				46F543551DA2DCF500D70ACF /* RACSignal+AUTSynchronizationAdditions.m in Sources */,
+				46F543541DA2DCAD00D70ACF /* RACSignal+AUTSynchronizationAdditionsSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10CC73E24FE139C3B55A52DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AUTExtReactiveCocoa;
+			target = 471818CCBAE67B93288BD8EE /* AUTExtReactiveCocoa */;
+			targetProxy = 0313E11E35EDAB4B805ACF34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		230D6F1E9EF0EAC6FD4FD860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11423E896173C5DD56F2E04C /* AUTExtReactiveCocoa.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3A0F5D2E1EF8559000FC51B0 /* Release Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B089DFDEF90527CE2664E9E2 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Static";
+		};
+		3A0F5D2F1EF8559000FC51B0 /* Release Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4466A71EF499490004C01C /* AUTExtReactiveCocoaStatic.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Static";
+		};
+		3A0F5D301EF8559000FC51B0 /* Release Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0F5D2D1EF8557000FC51B0 /* AUTExtReactiveCocoaTestsStatic.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Static";
+		};
+		3A4466A81EF499630004C01C /* Debug Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41CD3F9DB5155213DA02EBE /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Static";
+		};
+		3A4466A91EF499630004C01C /* Debug Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4466A71EF499490004C01C /* AUTExtReactiveCocoaStatic.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Static";
+		};
+		3A4466AA1EF499630004C01C /* Debug Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0F5D2D1EF8557000FC51B0 /* AUTExtReactiveCocoaTestsStatic.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Static";
+		};
+		AF878F6433C635411DA10D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11423E896173C5DD56F2E04C /* AUTExtReactiveCocoa.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		CA6BDE458BD9FA7A99EA27B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41CD3F9DB5155213DA02EBE /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DB5792D3059D233B9CC5C877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E058A46EC4B60494CA17FE /* AUTExtReactiveCocoaTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EAC5AEDCE87334D1629DD7A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E058A46EC4B60494CA17FE /* AUTExtReactiveCocoaTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F6C088C66BA0D1E578435851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B089DFDEF90527CE2664E9E2 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B8C8849A072093C1864EAC0 /* Build configuration list for PBXNativeTarget "AUTExtReactiveCocoaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC5AEDCE87334D1629DD7A8 /* Release */,
+				3A0F5D301EF8559000FC51B0 /* Release Static */,
+				DB5792D3059D233B9CC5C877 /* Debug */,
+				3A4466AA1EF499630004C01C /* Debug Static */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C0A47F0107BC4D9AA08B369 /* Build configuration list for PBXNativeTarget "AUTExtReactiveCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230D6F1E9EF0EAC6FD4FD860 /* Release */,
+				3A0F5D2F1EF8559000FC51B0 /* Release Static */,
+				AF878F6433C635411DA10D36 /* Debug */,
+				3A4466A91EF499630004C01C /* Debug Static */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E5E9724539DF3D3295FE880 /* Build configuration list for PBXProject "AUTExtReactiveCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6BDE458BD9FA7A99EA27B7 /* Debug */,
+				3A4466A81EF499630004C01C /* Debug Static */,
+				F6C088C66BA0D1E578435851 /* Release */,
+				3A0F5D2E1EF8559000FC51B0 /* Release Static */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 587EE7BCB05C43AE8BB2C768 /* Project object */;
+}
